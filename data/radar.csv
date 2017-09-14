@@ -60,8 +60,8 @@ WebRTC;TRUE;avaluar;llenguatges i entorns de treball;
 Angular  2;TRUE;avaluar;llenguatges i entorns de treball;
 AngularJS;FALSE;precaució;llenguatges i entorns de treball;
 JSPatch;FALSE;precaució;llenguatges i entorns de treball;
-Redis;TRUE;adoptar;plataformes;"<a href=""https://redis.io/"">Redis</a> pot ser utilitzada per les aplicacions en diferents sentits. Molt útil com a cache web així com a repositori de les sessions. La seva rapidesa, senzillesa i versatilitat li atorguen un paper principal en aplicacions amb molta audiència"
-Algolia;TRUE;adoptar;plataformes;"<a href=""https://www.algolia.com/"">Algolia</a> Es un cercador en SaaS que ja estem utilitzant en diferents portals. La seva potent API, temps de resposta i facilitat de gestió fan que aquesta plataforma sigui fàcilment integrable en qualsevol portal que necessiti capacitats de cerca avançades"
+Redis;TRUE;adoptar;plataformes;"Redis pot ser utilitzada per les aplicacions en diferents sentits. Molt útil com a cache web així com a repositori de les sessions. La seva rapidesa, senzillesa i versatilitat li atorguen un paper principal en aplicacions amb molta audiència"
+Algolia;TRUE;adoptar;plataformes;"Algolia és un cercador en SaaS que ja estem utilitzant en diferents portals. La seva potent API, temps de resposta i facilitat de gestió fan que aquesta plataforma sigui fàcilment integrable en qualsevol portal que necessiti capacitats de cerca avançades"
 Docker;FALSE;adoptar;plataformes;
 HSTS;FALSE;provar;plataformes;
 Linux security modules;FALSE;provar;plataformes;
@@ -79,8 +79,8 @@ Apache Flink;FALSE;avaluar;plataformes;
 AWS Application Load Balancer;TRUE;avaluar;plataformes;
 Cassandra carefully;TRUE;avaluar;plataformes;
 Electron;TRUE;avaluar;plataformes;
-Ethereum;TRUE;avaluar;plataformes;"The hype seems to have peaked for blockchains and cryptocurrencies, as evidenced by the slowdown of previous firehose-scale announcements in this area, and we expect some of the more speculative efforts to die out over time. One of the blockchains, <strong><a href=""https://www.ethereum.org"">Ethereum</a></strong>, while not universally popular among diehard blockchain aficionados, appears in increasing numbers in new initiatives. Ethereum is a public blockchain with a built-in programming language allowing developers to build ""smart contracts"", which are algorithmic movements of ether (the Ethereum cryptocurrency) in response to activity happening on the blockchain. R3CEV, the consortium building blockchain tech for banks, built its first proofs of concept on Ethereum. Ethereum has been used to build a distributed autonomous organization (DAO)—one of the first ""algorithmic corporations""—although a recent heist of $150 million in the ether demonstrates that the blockchains and cryptocurrencies are still the Wild West of the technology world."
-Hyperledger;TRUE;avaluar;plataformes;<strong>Hyperledger</strong> is a platform built around blockchain technologies. It consists of a blockchain implementation named Fabric and other associated tools. Disregarding the hype surrounding blockchain, our teams have found it easy to get started with these tools. The fact that it is an open source platform supported by the Linux Foundation also adds to our excitement about Hyperledger.
+Ethereum;TRUE;avaluar;plataformes;
+Hyperledger;TRUE;avaluar;plataformes;
 HoloLens;TRUE;avaluar;plataformes;
 IndiaStack;TRUE;avaluar;plataformes;
 Nomad;FALSE;avaluar;plataformes;
