@@ -60,8 +60,8 @@ WebRTC;TRUE;avaluar;llenguatges i entorns de treball;
 Angular  2;TRUE;avaluar;llenguatges i entorns de treball;
 AngularJS;FALSE;precaució;llenguatges i entorns de treball;
 JSPatch;FALSE;precaució;llenguatges i entorns de treball;
-Redis;TRUE;adoptar;plataformes;"Redis pot ser utilitzada per les aplicacions en diferents sentits. Molt útil com a cache web així com a repositori de les sessions. La seva rapidesa, senzillesa i versatilitat li atorguen un paper principal en aplicacions amb molta audiència"
-Algolia;TRUE;adoptar;plataformes;"Algolia és un cercador en SaaS que ja estem utilitzant en diferents portals. La seva potent API, temps de resposta i facilitat de gestió fan que aquesta plataforma sigui fàcilment integrable en qualsevol portal que necessiti capacitats de cerca avançades"
+Redis;TRUE;adoptar;plataformes;'Redis pot ser utilitzada per les aplicacions en diferents sentits. Molt útil com a cache web així com a repositori de les sessions. La seva rapidesa, senzillesa i versatilitat li atorguen un paper principal en aplicacions amb molta audiència'
+Algolia;TRUE;adoptar;plataformes;'Algolia és un cercador en SaaS que ja estem utilitzant en diferents portals. La seva potent API, temps de resposta i facilitat de gestió fan que aquesta plataforma sigui fàcilment integrable en qualsevol portal que necessiti capacitats de cerca avançades'
 Docker;FALSE;adoptar;plataformes;
 HSTS;FALSE;provar;plataformes;
 Linux security modules;FALSE;provar;plataformes;
