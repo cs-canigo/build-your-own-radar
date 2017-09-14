@@ -1,7 +1,7 @@
 {
-  "name": "build-your-own-radar",
+  "name": "ctti-radar",
   "version": "0.3.0",
-  "description": "",
+  "description": "CTTI's fork from Thoughtworks Radar",
   "main": "index.js",
   "scripts": {
     "test": "istanbul cover jasmine",
@@ -15,7 +15,7 @@
   "author": "ThoughtWorks",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thoughtworks/build-your-own-radar"
+    "url": "https://github.com/mostrovoi/build-your-own-radar"
   },
   "keywords": [
     "tech-radar"
@@ -40,6 +40,7 @@
     "yargs": "^5.0.0"
   },
   "dependencies": {
+    "node": "8.3.0",
     "chance": "^1.0.4",
     "d3": "^4.2.6",
     "d3-tip": "^0.7.1",
