@@ -3,13 +3,16 @@
   "version": "0.3.0",
   "description": "CTTI's fork from Thoughtworks Radar",
   "main": "index.js",
+  "engines": {
+    "node": "8.3.0"
+  },
   "scripts": {
     "test": "istanbul cover jasmine",
     "dev": "webpack-dev-server --dev --inline",
     "build": "webpack --prod",
     "examples:clean": "rm -rf examples/",
     "examples:copy": "mkdir examples && cp -r dist/* examples",
-    "examples": "npm run build && npm run examples:clean && npm run examples:copy",
+    "examples": "npm runc build && npm run examples:clean && npm run examples:copy",
     "publishExamples": "node ./scripts/publish-examples.js"
   },
   "author": "ThoughtWorks",

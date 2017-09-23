@@ -18,7 +18,7 @@ const SheetNotFoundError = require('../exceptions/sheetNotFoundError');
 const ContentValidator = require('./contentValidator');
 const Sheet = require('./sheet');
 const ExceptionMessages = require('./exceptionMessages');
-const radarGitUrl = "https://github.com/cs-canigo/radar/radar.csv"
+const radarGitUrl = "https://raw.githubusercontent.com/mostrovoi/radar/master/data/radar.csv"
 
 const plotRadar = function (title, blips) {
     document.title = title;

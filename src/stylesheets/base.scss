@@ -1,15 +1,11 @@
 @import 'colors';
-@import 'fonts';
 @import 'tip';
-@import 'form';
 @import 'error';
 @import 'header';
-@import 'footer';
 
 @import url(https://www.thoughtworks.com/css/screen.css);
 
 body {
-  font: 18px 'Open Sans';
   -webkit-font-smoothing: antialiased;
   margin: 0;
 }
@@ -251,7 +247,6 @@ body {
 
       h3 {
         text-transform: uppercase;
-        font-size: $baseFont;
         margin: 0;
         font-weight: bold;
       }
@@ -306,7 +301,6 @@ body {
             padding: 2px 5px;
             border-radius: 2px;
             cursor: pointer;
-            font-size: $baseFont;
             font-weight: 400;
 
             &.highlight {
