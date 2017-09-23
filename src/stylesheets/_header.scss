@@ -27,19 +27,6 @@ header {
       }
     }
 
-    .radar-title__logo {
-      width: 30%;
-      display: table-cell;
-      vertical-align: middle;
-      a {
-        border-bottom: none;
-      }
-      img {
-        vertical-align: middle;
-        width: 35%;
-      }
-
-    }
   }
 
   .print-radar {
@@ -47,7 +34,7 @@ header {
   }
 
   .home-link {
-    color: $pink;
+    color: $blue;
     cursor: pointer;
     display: inline-block;
     padding-bottom: 15px;
