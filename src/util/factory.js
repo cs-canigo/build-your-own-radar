@@ -210,11 +210,11 @@ function plotLoading(content) {
             .append('div')
             .attr('class', 'input-sheet');
 
-        set_document_title();
+  //      set_document_title();
 
-        plotLogo(content);
+//        plotLogo(content);
 
-        var bannerText = '<h1>Building your radar...</h1><p>Your Technology Radar will be available in just a few seconds</p>';
+        var bannerText = '<h1>Construïnt el teu radar...</h1><p>El teu radar estarà disponible en uns pocs segons</p>';
         plotBanner(content, bannerText);
         plotFooter(content);
 }
@@ -232,14 +232,9 @@ function plotFooter(content) {
         .append('div')
         .attr('class', 'footer-content')
         .append('p')
-        .html('Powered by <a href="https://www.thoughtworks.com"> ThoughtWorks</a>. '
-        + 'By using this service you agree to <a href="https://info.thoughtworks.com/visualize-your-tech-strategy-terms-of-service.html">ThoughtWorks\' terms of use</a>. '
-        + 'You also agree to our <a href="https://www.thoughtworks.com/privacy-policy">privacy policy</a>, which describes how we will gather, use and protect any personal data contained in your public Google Sheet. '
-        + 'This software is <a href="https://github.com/thoughtworks/build-your-own-radar">open source</a> and available for download and self-hosting.');
-
-
-
+        .html('Adaptació del radar de <a href="https://www.thoughtworks.com"> ThoughtWorks</a>. ');
 }
+
 
 function plotBanner(content, text) {
     content.append('div')
