@@ -400,7 +400,7 @@ const Radar = function (size, radar) {
   }
 
   function plotRadarHeader() {
-    var header = d3.select('#radarctti').insert('radarheader', "#radar");
+    var header = d3.select('#radarctti').insert('div','#radar').attr('id','radarheader');
     return header;
   }
 
@@ -442,7 +442,7 @@ const Radar = function (size, radar) {
 
   function selectQuadrant(order, startAngle) {
     d3.selectAll('.home-link').classed('selected', false);
-    createHomeLink(d3.select('radarheader'));
+    createHomeLink(d3.select('#radarheader'));
 
     d3.selectAll('.button').classed('selected', false).classed('full-view', false);
     d3.selectAll('.button.' + order).classed('selected', true);
