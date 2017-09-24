@@ -48,7 +48,7 @@ const plotRadar = function (title,blips) {
         radar.addQuadrant(quadrant)
     });
 
-    var size = (window.innerHeight - 133) < 620 ? 620 : window.innerHeight - 133;
+    var size = (window.innerHeight - 120) < 820 ? 820 : window.innerHeight - 120;
 
     new GraphingRadar(size, radar).init().plot();
 }
@@ -205,7 +205,6 @@ function plotLoading(content) {
             .attr('class', 'loading')
             .append('div')
             .attr('class', 'input-sheet');
-//        plotLogo(content);
 }
 
 function plotLogo(content) {
