@@ -424,11 +424,6 @@ const Radar = function (size, radar) {
       addButton(quadrants[i]);
     });
 
-
-    header.append('div')
-      .classed('print-radar button no-capitalize', true)
-      .text('Imprimeix aquest radar')
-      .on('click', window.print.bind(window));
   }
 
   function mouseoverQuadrant(order) {
