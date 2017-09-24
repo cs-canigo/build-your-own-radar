@@ -400,7 +400,7 @@ const Radar = function (size, radar) {
   }
 
   function plotRadarHeader() {
-    var header = d3.select('body').insert('header', "#radar");
+    var header = d3.select('#radarctti').insert('header', "#radar");
     return header;
   }
 
@@ -498,7 +498,7 @@ const Radar = function (size, radar) {
   }
 
   self.init = function () {
-    radarElement = d3.select('body').append('div').attr('id', 'radar');
+    radarElement = d3.select('#radarctti').append('div').attr('id', 'radar');
     return self;
   };
 
