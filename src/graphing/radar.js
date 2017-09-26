@@ -159,9 +159,9 @@ const Radar = function (size, radar) {
     var blips, quadrant, startAngle, order;
 
     quadrant = quadrantWrapper.quadrant;
+    
     startAngle = quadrantWrapper.startAngle;
     order = quadrantWrapper.order;
-
     d3.select('.quadrant-table.' + order)
       .append('h2')
       .attr('class', 'quadrant-table__name')
@@ -419,24 +419,14 @@ const Radar = function (size, radar) {
         .on('mouseout', mouseoutQuadrant.bind({}, quadrant.order))
         .on('click', selectQuadrant.bind({}, quadrant.order, quadrant.startAngle));
     }
-
-    _.each([0, 1, 2, 3], function (i) {
+    //FIXME: Canviat l'orde de 0 per 1 per ser coherent amb la representació visual
+    //Hi ha un bug a com es generen els anells fer-ho així de mentres
+    _.each([1, 0, 2, 3], function (i) {
       addButton(quadrants[i]);
     });
 
   }
 
-
-
-  function plotRadarFooter() {
-     d3.select('#radarctti')
-      .insert('div', '#radar-plot + *')
-      .attr('id', 'radarfooter')
-      .append('div')
-      .attr('class', 'footer-content')
-      .append('p')
-          .html('<a href="https://www.thoughtworks.com" target="_blank"><img src="https://cdn.rawgit.com/mostrovoi/radar/master/images/logo.png" / ></a>');
-  }
 
   function mouseoverQuadrant(order) {
     d3.select('.quadrant-group-' + order).style('opacity', 1);
@@ -526,8 +516,6 @@ const Radar = function (size, radar) {
       plotTexts(quadrantGroup, rings, quadrant);
       plotBlips(quadrantGroup, rings, quadrant);
     });
-
-    plotRadarFooter();
   };
 
   return self;
