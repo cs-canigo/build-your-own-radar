@@ -419,14 +419,12 @@ const Radar = function (size, radar) {
         .on('mouseout', mouseoutQuadrant.bind({}, quadrant.order))
         .on('click', selectQuadrant.bind({}, quadrant.order, quadrant.startAngle));
     }
-    //FIXME: Canviat l'orde de 0 per 1 per ser coherent amb la representació visual
-    //Hi ha un bug a com es generen els anells fer-ho així de mentres
+//FIXME: canviar el texte orientació i quadrants order a radar.js
     _.each([1, 0, 2, 3], function (i) {
       addButton(quadrants[i]);
     });
 
   }
-
 
   function mouseoverQuadrant(order) {
     d3.select('.quadrant-group-' + order).style('opacity', 1);

@@ -49,7 +49,7 @@ const plotRadar = function (title,blips) {
     });
 
     var size = (window.innerHeight - 133) < 680 ? 680 : window.innerHeight - 133;
-
+    
     new GraphingRadar(size, radar).init().plot();
 }
 
