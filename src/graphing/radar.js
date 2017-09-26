@@ -426,6 +426,18 @@ const Radar = function (size, radar) {
 
   }
 
+
+
+  function plotRadarFooter() {
+     d3.select('#radarctti')
+      .insert('div', '#radar-plot + *')
+      .attr('id', 'radarfooter')
+      .append('div')
+      .attr('class', 'footer-content')
+      .append('p')
+          .html('<a href="https://www.thoughtworks.com" target="_blank"><img src="https://cdn.rawgit.com/mostrovoi/radar/master/images/logo.png" / ></a>');
+  }
+
   function mouseoverQuadrant(order) {
     d3.select('.quadrant-group-' + order).style('opacity', 1);
     d3.selectAll('.quadrant-group:not(.quadrant-group-' + order + ')').style('opacity', 0.3);
@@ -485,8 +497,6 @@ const Radar = function (size, radar) {
       .style('pointer-events', 'none')
       .attr('transform', 'translate(' + translateXAll + ',' + translateYAll + ')scale(0)');
 
-
-
     if (d3.select('.legend.legend-' + order).empty()){
       drawLegend(order);
     }
@@ -516,6 +526,8 @@ const Radar = function (size, radar) {
       plotTexts(quadrantGroup, rings, quadrant);
       plotBlips(quadrantGroup, rings, quadrant);
     });
+
+    plotRadarFooter();
   };
 
   return self;

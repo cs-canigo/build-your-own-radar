@@ -200,28 +200,11 @@ const GoogleSheetInput = function () {
 };
 
 function plotLoading(content) {
-            var content = d3.select('body')
+            var content = d3.select('#radarctti')
             .append('div')
             .attr('class', 'loading')
             .append('div')
             .attr('class', 'input-sheet');
 }
-
-function plotLogo(content) {
-    content.append('div')
-        .attr('class', 'input-sheet__logo')
-        .html('<a href="https://www.thoughtworks.com"><img src="/images/logo.png" / ></a>');
-}
-
-function plotFooter(content) {
-    content
-        .append('div')
-        .attr('id', 'footer')
-        .append('div')
-        .attr('class', 'footer-content')
-        .append('p')
-        .html('Adaptació del radar de <a href="https://www.thoughtworks.com"> ThoughtWorks</a>. ');
-}
-
 
 module.exports = GoogleSheetInput;
