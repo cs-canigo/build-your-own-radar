@@ -47,6 +47,10 @@ https://github.com/NUKnightLab/TimelineJS3
 2. Go to https://github.com/cs-canigo/portal/blob/master/content/drafts/radar.md and update the last line containing  
 
 `<script type="application/javascript" src="https://rawgit.com/cs-canigo/radar/master/main.xxx.js">` and place the name of the new commited filename here.
+
+Our radar expects a div with id radarctti for it to be displayed. Add the following snippet to the html page where you want your radar to be displayed:
+
+`<div id="radarctti" class="container-radar"></div>`
      
 **NOTE:** Custom CSS looks like not used at the moment. Figure out what we miss.
 
