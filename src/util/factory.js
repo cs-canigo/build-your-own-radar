@@ -18,7 +18,7 @@ const SheetNotFoundError = require('../exceptions/sheetNotFoundError');
 const ContentValidator = require('./contentValidator');
 const Sheet = require('./sheet');
 const ExceptionMessages = require('./exceptionMessages');
-const radarGitUrl = "https://raw.githubusercontent.com/cs-canigo/radar/master/data/radar.csv"
+const radarGitUrl = "https://rawgit.com/cs-canigo/radar/master/data/radar.csv"
 
 const plotRadar = function (title,blips) {
 
