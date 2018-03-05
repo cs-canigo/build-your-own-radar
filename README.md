@@ -27,20 +27,28 @@ Create a Google Sheet. Give it at least the below column headers, and put in the
 ### How the fork was done
 
 The original thoughtworks radar is based on the assumption that the radar will be deployed with its own HTML page. 
+
 We wanted to be able to embed a generated radar (javascript code + css) into any webpage, i.e. to work in the same way timeline library works for instance:
 
- https://github.com/NUKnightLab/TimelineJS3
+https://github.com/NUKnightLab/TimelineJS3
 
-Steps for making this possible:
+#### Changes done from original thoughtworks radar to make this possible
 
-1.- Remove all general css styles that apply to the whole page: Avoids accidental overwritting of custom canigo site styles
-2.- Use customs ID for html elements instead of general html elements such as body, i.e. give more control to the container papge in how to allocate the javascript elements (radar): Use d3.select('#myid') instead of d3.select('body') so that the widget could be placed wherever we please
-3.- Remove general things such as document.title or set_document_title
-4.- Execute the build according to instructions given below. Take the generated css and js and commit into https://github.com/cs-canigo/radar. Remove the old main.xxxx.js and main.xxxx.css.
-5.- Go to https://github.com/cs-canigo/portal/blob/master/content/drafts/radar.md and update the last line containing  
-<script type="application/javascript" src="https://rawgit.com/cs-canigo/radar/master/main.xxx.js"> and give the new commited filename here.
+1. Remove all general css styles that apply to the whole page: Avoids accidental overwritting of custom canigo site styles
+
+2. Use customs ID for html elements instead of general html elements such as body, i.e. give more control to the container papge in how to allocate the javascript elements (radar): Use d3.select('#myid') instead of d3.select('body') so that the widget could be placed wherever we please
+
+3. Remove general things such as document.title or set_document_title
+
+#### How to make a new build
+
+1. Execute the build according to instructions given below (npm install). Take the generated css and js and commit into https://github.com/cs-canigo/radar. Remove the old main.xxxx.js and main.xxxx.css.
+
+2. Go to https://github.com/cs-canigo/portal/blob/master/content/drafts/radar.md and update the last line containing  
+
+`<script type="application/javascript" src="https://rawgit.com/cs-canigo/radar/master/main.xxx.js">` and give the new commited filename here.
      
-NOTE: Custom CSS looks like not used at the moment. Figure out what we miss
+**NOTE:** Custom CSS looks like not used at the moment. Figure out what we miss
      
 
 ### More complex usage
