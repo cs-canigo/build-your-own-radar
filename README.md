@@ -51,8 +51,6 @@ https://github.com/NUKnightLab/TimelineJS3
 Our radar expects a div with id radarctti for it to be displayed. Add the following snippet to the html page where you want your radar to be displayed:
 
 `<div id="radarctti" class="container-radar"></div>`
-     
-**NOTE:** Custom CSS looks like not used at the moment. Figure out what we miss.
 
 **NOTE:** Consider using CDN if you are satisfied with the result and think the radar data will not change in a while. See:
 
