@@ -57,11 +57,9 @@ Our radar expects a div with id radarctti for it to be displayed. Add the follow
 https://rawgit.com/
 
 
-### More complex usage
+## Contribute
 
 The application uses [webpack](https://webpack.github.io/) to package dependencies and minify all .js and .scss files.
-
-## Contribute
 
 All tasks are defined in `package.json`.
 
