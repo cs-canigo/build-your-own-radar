@@ -42,7 +42,7 @@ https://github.com/NUKnightLab/TimelineJS3
 
 #### How to make a new build
 
-1. Execute the build according to instructions given below (npm install). Take the generated css and js and commit into https://github.com/cs-canigo/radar. Remove the old main.xxxx.js and main.xxxx.css.
+1. Execute the following command: **npm run-script build**. Take the generated css and js located at /dist folder and commit into https://github.com/cs-canigo/radar. Remove the old main.xxxx.js and main.xxxx.css.
 
 2. Go to https://github.com/cs-canigo/portal/blob/master/content/drafts/radar.md and update the last line containing  
 
