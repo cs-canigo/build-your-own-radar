@@ -48,8 +48,12 @@ https://github.com/NUKnightLab/TimelineJS3
 
 `<script type="application/javascript" src="https://rawgit.com/cs-canigo/radar/master/main.xxx.js">` and give the new commited filename here.
      
-**NOTE:** Custom CSS looks like not used at the moment. Figure out what we miss
-     
+**NOTE:** Custom CSS looks like not used at the moment. Figure out what we miss.
+
+**NOTE:** Consider using CDN if you are satisfied with the result and think the radar data will not change in a while. See:
+
+https://rawgit.com/
+
 
 ### More complex usage
 
