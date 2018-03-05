@@ -59,10 +59,6 @@ https://rawgit.com/
 
 ### More complex usage
 
-To create the data representation, you can use the Google Sheet [factory](/src/util/factory.js), or you can also insert all your data straight into the code.
-
-The app uses [Tabletop.js](https://github.com/jsoma/tabletop) to fetch the data from a Google Sheet, so refer to their documentation for more advanced interaction.  The input from the Google Sheet is sanitized by whitelisting HTML tags with [sanitize-html](https://github.com/punkave/sanitize-html).
-
 The application uses [webpack](https://webpack.github.io/) to package dependencies and minify all .js and .scss files.
 
 ## Contribute
@@ -72,7 +68,7 @@ All tasks are defined in `package.json`.
 Pull requests are welcome; please write tests whenever possible. 
 Make sure you have nodejs installed.
 
-- `git clone git@github.com:thoughtworks/build-your-own-radar.git`
+- `git clone git@github.com:cs-canigo/build-your-own-radar.git`
 - `npm install`
 - `npm test` - to run your tests
 - `npm run dev` - to run application in localhost:8080. This will watch the .js and .css files and rebuild on file changes
