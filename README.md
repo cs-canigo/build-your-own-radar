@@ -4,11 +4,12 @@ A library that generates an interactive radar, inspired by [thoughtworks.com/rad
 
 ## Demo
 
-You can see this in action at https://radar.thoughtworks.com. If you plug in [this data](https://docs.google.com/spreadsheets/d/1YXkrgV7Y6zShiPeyw4Y5_19QOfu5I6CyH5sGnbkEyiI/) you'll see [this visualization](https://radar.thoughtworks.com/?sheetId=1YXkrgV7Y6zShiPeyw4Y5_19QOfu5I6CyH5sGnbkEyiI). 
+You can see this in action at http://canigo.ctti.gencat.cat/drafts/radar/. Data is taken from a CSV file placed at another repo:
+https://github.com/cs-canigo/radar/blob/master/data/radar.csv
 
 ## How To Use
 
-The easiest way to use the app out of the box is to provide a *public* Google Sheet ID from which all the data will be fetched. You can enter that ID into the input field on the first page of the application, and your radar will be generated. The data must conform to the format below for the radar to be generated correctly.
+The data is taken from another git repo located at https://github.com/cs-canigo/radar/blob/master/data/radar.csv. Any change done in the CSV file will reflect immediately in the final radar deployed at canigo.ctti.gencat.cat. The data must conform to the format below for the radar to be generated correctly.
 
 ### Setting up your data
 
@@ -23,21 +24,24 @@ Create a Google Sheet. Give it at least the below column headers, and put in the
 | Apache Kylin  | assess | platforms              | TRUE  | Apache Kylin is an open source analytics solution ...   |
 | JSF           | hold   | languages & frameworks | FALSE | We continue to see teams run into trouble using JSF ... |
 
-### Sharing the sheet
+### How the fork was done
 
-* In Google sheets, go to 'File', choose 'Publish to the web...' and then click 'Publish'.
-* Close the 'Publish to the web' dialog.
-* Copy the URL of your editable sheet from the browser (Don't worry, this does not share the editable version). 
+The original thoughtworks radar is based on the assumption that the radar will be deployed with its own HTML page. 
+We wanted to be able to embed a generated radar (javascript code + css) into any webpage, i.e. to work in the same way timeline library works for instance:
 
-The URL will be similar to [https://docs.google.com/spreadsheets/d/1waDG0_W3-yNiAaUfxcZhTKvl7AUCgXwQw8mdPjCz86U/edit](https://docs.google.com/spreadsheets/d/1waDG0_W3-yNiAaUfxcZhTKvl7AUCgXwQw8mdPjCz86U/edit). In theory we are only interested in the part between '/d/' and '/edit' but you can use the whole URL if you want.
+ https://github.com/NUKnightLab/TimelineJS3
 
-### Building the radar
+Steps for making this possible:
 
-Paste the URL in the input field on the home page.
-
-That's it!
-
-Note: the quadrants of the radar, and the order of the rings inside the radar will be drawn in the order they appear in your Google Sheet.
+1.- Remove all general css styles that apply to the whole page: Avoids accidental overwritting of custom canigo site styles
+2.- Use customs ID for html elements instead of general html elements such as body, i.e. give more control to the container papge in how to allocate the javascript elements (radar): Use d3.select('#myid') instead of d3.select('body') so that the widget could be placed wherever we please
+3.- Remove general things such as document.title or set_document_title
+4.- Execute the build according to instructions given below. Take the generated css and js and commit into https://github.com/cs-canigo/radar. Remove the old main.xxxx.js and main.xxxx.css.
+5.- Go to https://github.com/cs-canigo/portal/blob/master/content/drafts/radar.md and update the last line containing  
+<script type="application/javascript" src="https://rawgit.com/cs-canigo/radar/master/main.xxx.js"> and give the new commited filename here.
+     
+NOTE: Custom CSS looks like not used at the moment. Figure out what we miss
+     
 
 ### More complex usage
 
