@@ -1,4 +1,4 @@
-require('./stylesheets/base.scss');
+require('./common');
 require('./images/logo.png');
 
 const GoogleSheetInput = require('./util/factory');
